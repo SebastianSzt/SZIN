@@ -36,12 +36,13 @@ namespace Zadanie1
             double Nphi = a / Math.Sqrt(1 - e2 * Math.Pow(Math.Sin(latr), 2));
 
             double[] locations = new double[3];
-            locations[0] = (Nphi + h) * Math.Cos(latr) * Math.Cos(lonr);
-            locations[1] = (Nphi + h) * Math.Cos(latr) * Math.Sin(lonr);
-            locations[2] = ((b * b) / (a * a) * Nphi + h) * Math.Sin(latr);
+            locations[0] = (N + altitude) * Math.Cos(latRad) * Math.Cos(lonRad);
+            locations[1] = (N + altitude) * Math.Cos(latRad) * Math.Sin(lonRad);
+            locations[2] = ((1 - eSquared) * N + altitude) * Math.Sin(latRad);
 
             return locations;
         }
+
 
         static List<City> ReadFile(string fileName)
         {
