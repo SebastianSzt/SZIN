@@ -1,0 +1,20 @@
+﻿Toruń			18°37'E		53°02'N
+Bydgoszcz		18°00'E		53°07'N
+Poznań			16°55'E		52°25'N
+Warszawa		21°02'E		52°12'N
+Kraków			19°57'E		50°03'N
+Wrocław			17°02'E		51°07'N
+Łódź			19°28'E		51°47'N
+Gdańsk			18°38'E		54°22'N
+Szczecin		14°34'E		53°26'N
+Lublin			22°34'E		51°14'N
+Białystok		23°10'E		53°08'N
+Gdynia			18°32'E		54°32'N
+Zielona Góra		15°30'E		51°56'N
+Świnoujście		14°15'E		53°55'N
+Częstochowa		19°07'E		50°48'N
+Radom			21°10'E		51°24'N
+Rzeszów			22°01'E		50°03'N
+Sosnowiec		19°08'E		50°17'N
+Łowicz			19°56'E		52°06'N
+Krosno			21°46'E		49°42'N
