@@ -5,7 +5,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Zadanie1
+namespace NeighborProximity
 {
     internal class Program
     {
@@ -26,7 +26,7 @@ namespace Zadanie1
             return result;
         }
 
-        static double[] CoordinateConverter(double longitude, double latitude, double h)
+        static double[] CoordinateConverter(double latitude, double longitude, double h)
         {
             double a = 6378137.0;
             double b = 6356752.3;
@@ -36,13 +36,12 @@ namespace Zadanie1
             double Nphi = a / Math.Sqrt(1 - e2 * Math.Pow(Math.Sin(latr), 2));
 
             double[] locations = new double[3];
-            locations[0] = (N + altitude) * Math.Cos(latRad) * Math.Cos(lonRad);
-            locations[1] = (N + altitude) * Math.Cos(latRad) * Math.Sin(lonRad);
-            locations[2] = ((1 - eSquared) * N + altitude) * Math.Sin(latRad);
+            locations[0] = (Nphi + h) * Math.Cos(latr) * Math.Cos(lonr);
+            locations[1] = (Nphi + h) * Math.Cos(latr) * Math.Sin(lonr);
+            locations[2] = ((b * b) / (a * a) * Nphi + h) * Math.Sin(latr);
 
             return locations;
         }
-
 
         static List<City> ReadFile(string fileName)
         {
@@ -166,26 +165,6 @@ namespace Zadanie1
             List<City> cities = ReadFile("Cities.txt");
 
             double[][] distances = CalculateDistances(cities);
-
-            //Console.Write("\t\t");
-            //for (int i = 0; i < cities.Count; i++)
-            //{
-            //    Console.Write($"{cities[i].Name,-15}");
-            //}
-            //Console.WriteLine("\n");
-
-            //for (int i = 0; i < cities.Count; i++)
-            //{
-            //    Console.Write($"{cities[i].Name,-15}\t");
-            //    for (int j = 0; j < cities.Count; j++)
-            //    {
-            //        double distanceInKilometers = Math.Ceiling(distances[i][j] / 1000.0);
-            //        Console.Write($"{distanceInKilometers,-15}");
-            //    }
-            //    Console.WriteLine();
-            //}
-
-            //Console.WriteLine("\n\n");
 
             TSP(cities, distances);
         }

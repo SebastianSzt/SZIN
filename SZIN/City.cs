@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Zadanie1
+namespace NeighborProximity
 {
     internal class City
     {
