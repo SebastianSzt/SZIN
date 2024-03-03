@@ -171,7 +171,7 @@ class Program
         double currentTemperature = initialTemperature;
 
         List<int> currentSolution = Enumerable.Range(0, cities.Count).ToList();
-        currentSolution = currentSolution.OrderBy(x => Random.Shared.Next()).ToList();
+        currentSolution = currentSolution.OrderBy(x => random.Next()).ToList();
 
         for (int epoch = 0; epoch < maxEpochs; epoch++)
         {
@@ -222,8 +222,8 @@ class Program
     {
         double lowerBound = 0;
         double upperBound = 10;
-        int maxEpochs = 1000;
-        int numTrialsPerEpoch = 500;
+        int maxEpochs = 10;
+        int numTrialsPerEpoch = 5;
         double initialTemperature = 1;
         double coolingRate = 0.9;
         
