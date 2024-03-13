@@ -1,0 +1,10 @@
+﻿Warszawa		21°02'E		52°12'N
+Kraków			19°57'E		50°03'N
+Łódź			19°28'E		51°47'N
+Wrocław			17°02'E		51°07'N
+Poznań			16°55'E		52°25'N
+Gdańsk			18°38'E		54°22'N
+Szczecin		14°34'E		53°26'N
+Bydgoszcz		18°00'E		53°07'N
+Toruń			18°37'E		53°02'N
+Katowice		19°00'E		50°15'N
