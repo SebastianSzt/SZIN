@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NeighborProximity", "Neighb
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASearch", "ASearch\ASearch.csproj", "{3844867C-550D-4F8F-A38D-1D743A3777FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minimax", "Minimax\Minimax.csproj", "{8BFDA068-04CC-4261-A463-176F6FF616B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Minimax", "Minimax\Minimax.csproj", "{8BFDA068-04CC-4261-A463-176F6FF616B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpertSystem", "ExpertSystem\ExpertSystem.csproj", "{BF8CF2F0-1524-4032-97C9-DA9E0B3D4FAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{8BFDA068-04CC-4261-A463-176F6FF616B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BFDA068-04CC-4261-A463-176F6FF616B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BFDA068-04CC-4261-A463-176F6FF616B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF8CF2F0-1524-4032-97C9-DA9E0B3D4FAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF8CF2F0-1524-4032-97C9-DA9E0B3D4FAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF8CF2F0-1524-4032-97C9-DA9E0B3D4FAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF8CF2F0-1524-4032-97C9-DA9E0B3D4FAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
